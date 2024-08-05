@@ -4,37 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="/"><img src="#" alt="Logo img" /></a>
+        <a href="/"><img src="./images/logo.svg" alt="Logo img" /></a>
         <ul>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
     </header>
     <main>
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
       <section>
         <div class="container">
           <h2>some text</h2>
-          <ul>
+          <ul class="advantages-list">
             <li>Великий попит на ринку</li>
             <li>Доступні за бюджетом формати</li>
             <li>Досвідчена управлінська команда</li>
           </ul>
         </div>
       </section>
-      <section>
+      <section id="traditions-section">
         <div class="container">
-          <h2>Новий формат традицій</h2>
+          <h2 class="section-title">Новий формат традицій</h2>
           <p>
             <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
             зберегла смак традиційної випічки та натуральність інгредієнтів.
@@ -44,11 +46,14 @@
             <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень
             стильний дизайн та висока якість обслуговування!
           </p>
+          <img src="./images/baker-man.jpg" alt="baker-man" />
         </div>
       </section>
-      <section>
+      <section id="chefs-section">
         <div class="container">
-          <h2>Наші найкращі <span>шеф -кухарі</span></h2>
+          <h2 class="section-title">
+            Наші найкращі <span class="accent">шеф-кухарі</span>
+          </h2>
           <ul>
             <li>
               <article>
@@ -72,9 +77,9 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="formats-section">
         <div class="container">
-          <h2>Формати</h2>
+          <h2 class="section-title">Формати</h2>
           <ul>
             <li>
               <article>
@@ -109,9 +114,9 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section id="contacts-section">
         <div class="container">
-          <h2>Приєднуйся до мережі пекарень</h2>
+          <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
           <form action="">
             <input type="text" />
             <input type="text" />
@@ -133,13 +138,13 @@
     <footer>
       <nav>
         <a href="/">
-          <img src="#" alt="Logo img" />
+          <img src="./images/logo.svg" alt="Logo img" />
         </a>
         <ul>
-          <li><a href="#">Наші традиції</a></li>
-          <li><a href="#">Шеф-кухарі</a></li>
-          <li><a href="#">Формати</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#traditions-section">Наші традиції</a></li>
+          <li><a href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a href="#formats-section">Формати</a></li>
+          <li><a href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <address>
