@@ -1,50 +1,50 @@
 :root {
-    --color-brand-light: #819b57;
-    --color-brand-dark: #465929;
-    --color-primary-light: #faf4ea;
-    --color-primary-dark: #31261a;
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+  --color-primary-light: #faf4ea;
+  --color-primary-dark: #31261a;
 }
 /* Base */
 body {
-    color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
 }
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* Button */
 .button {
-    color: var(--color-primary-light);
-    background-color: var(--color-brand-light);
-    border: 2px solid var(--color-brand-light);
-    border-radius: 8px;
-    cursor: pointer;
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
+  border-radius: 8px;
+  cursor: pointer;
 }
 .button:hover {
-    color: var(--color-brand-dark);
-    background-color: transparent;
+  color: var(--color-brand-dark);
+  background-color: transparent;
 }
 /* Links */
 .link {
-    color: var(--color-primary-light);
+  color: var(--color-primary-light);
 }
 .link:hover {
-    color:var(--color-brand-light);
+  color: var(--color-brand-light);
 }
 
 /*  */
 .hero-title {
-    color: var(--color-primary-light);
+  color: var(--color-primary-light);
 }
 .hero-title .accent {
-    color: var(--color-brand-light);
+  color: var(--color-brand-light);
 }
 
 .advantages-list {
-    color: var(--color-primary-light);
-    background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-light);
 }
 
-.section-title .accent{
-    color: var(--color-brand-dark);
+.section-title .accent {
+  color: var(--color-brand-dark);
 }
