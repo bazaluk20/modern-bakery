@@ -12,6 +12,6 @@
   "proseWrap": "preserve",
   "htmlWhitespaceSensitivity": "css",
   "css": {
-    "parser": "css"
+    "parser": "scss"
   }
 }
