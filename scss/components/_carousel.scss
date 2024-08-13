@@ -13,13 +13,13 @@
   /* не сжимаем блок
    */
   transition: background-color 0.3s, fill 0.3s;
-}
 
-.carousel-button.prev {
-  transform: rotate(180deg);
-}
+  &:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+  }
 
-.carousel-button:hover {
-  background-color: var(--color-primary-dark);
-  fill: var(--color-primary-light);
+  &--prev {
+    transform: rotate(180deg);
+  }
 }
