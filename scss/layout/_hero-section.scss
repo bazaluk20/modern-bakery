@@ -10,6 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  position: relative;
 
   @media screen and (min-width: $bp-desctop) {
     padding: 272px 0;
@@ -33,16 +34,20 @@
     font-weight: 900;
     color: var(--color-primary-light);
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 0;
 
     @media screen and (min-width: $bp-desctop) {
       font-size: 128px;
       line-height: 1.5;
-      margin-bottom: 0;
     }
   }
 
   &__button {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    width: fit-content;
     margin: 0 auto;
     @media screen and (min-width: $bp-desctop) {
       display: none;

@@ -19,7 +19,7 @@
     fill: var(--color-primary-light);
   }
 
-  &--prev {
+  &.prev {
     transform: rotate(180deg);
   }
 }

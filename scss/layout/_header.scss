@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   padding-top: 16px;
+  z-index: 1;
 
   @media screen and (min-width: $bp-desctop) {
     padding-top: 32px;

@@ -7,13 +7,52 @@
   background-color: var(--color-primary-light);
   transform: translateX(100%);
   transition: transform 0.3s;
+  z-index: 2;
+
+  &::before {
+    content: '';
+    background-image: url('../images/bread-in-modal.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    height: 240px;
+  }
 
   &.is-open {
     transform: translateX(0);
   }
   &__btn-close {
     position: absolute;
-    top: 16px;
-    right: 24px;
+    top: 22px;
+    right: 27px;
+    background-image: url('../images/close.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    border: none;
+  }
+
+  &__nav {
+    padding: 16px 24px;
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    font-size: 14px;
+
+    &:active {
+      font-weight: 600;
+      color: var(--color-brand-normal);
+    }
   }
 }

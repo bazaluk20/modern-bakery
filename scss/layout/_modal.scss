@@ -29,20 +29,48 @@
   background-color: var(--color-primary-light);
   border-radius: 32px;
   position: relative;
-  padding: 128px;
+  padding: 48px 32px;
   overflow-y: auto;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 128px;
+  }
+
+  &::before {
+    content: '';
+    background-image: url('../images/bread-in-modal.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 180px;
+    height: 230px;
+  }
 
   &__btn-close {
     position: absolute;
     top: 40px;
     right: 40px;
+    background-image: url('../images/close.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border: none;
+    cursor: pointer;
   }
 
   &__title {
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 900;
     text-align: center;
     margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 64px;
+    }
   }
 
   &__descriprion {
@@ -51,7 +79,11 @@
   }
 
   &__form-field {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
   }
 
   &__button {
